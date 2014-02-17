@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\Sources\DatabaseSqlite\precomp.cpp" />
+    <ClCompile Include="..\Sources\DatabaseSqlite\Sqlite\sqlite_database.cpp">
+      <Filter>Sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\DatabaseSqlite\Sqlite\sqlite_gameobjects.cpp">
+      <Filter>Sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\DatabaseSqlite\Sqlite\sqlite_users.cpp">
+      <Filter>Sqlite</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Sources\DatabaseSqlite\precomp.h" />
+    <ClInclude Include="..\Sources\DatabaseSqlite\Sqlite\sqlite_database.h">
+      <Filter>Sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\DatabaseSqlite\gameobjects_repository.h" />
+    <ClInclude Include="..\Sources\DatabaseSqlite\repository_manager.h" />
+    <ClInclude Include="..\Sources\DatabaseSqlite\users_repository.h" />
+    <ClInclude Include="..\Sources\DatabaseSqlite\Sqlite\sqlite_gameobjects.h">
+      <Filter>Sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\DatabaseSqlite\Sqlite\sqlite_users.h">
+      <Filter>Sqlite</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Sqlite">
+      <UniqueIdentifier>{e256fc3d-0a8c-4935-8619-d4b147a4d718}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

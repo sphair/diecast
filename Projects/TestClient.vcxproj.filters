@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\TestClient\game.cpp" />
+    <ClCompile Include="..\TestClient\precomp.cpp" />
+    <ClCompile Include="..\TestClient\program.cpp" />
+    <ClCompile Include="..\TestClient\GameWorld\client_component_factory.cpp">
+      <Filter>GameWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TestClient\GameWorld\client_gameobject.cpp">
+      <Filter>GameWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TestClient\GameWorld\client_vicinity_objects.cpp">
+      <Filter>GameWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TestClient\GameWorld\client_zone.cpp">
+      <Filter>GameWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TestClient\GameWorld\gameobject.cpp">
+      <Filter>GameWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TestClient\ping.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\TestClient\game.h" />
+    <ClInclude Include="..\TestClient\precomp.h" />
+    <ClInclude Include="..\TestClient\program.h" />
+    <ClInclude Include="..\TestClient\GameWorld\client_component_factory.h">
+      <Filter>GameWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TestClient\GameWorld\client_gameobject.h">
+      <Filter>GameWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TestClient\GameWorld\client_vicinity_objects.h">
+      <Filter>GameWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TestClient\GameWorld\client_zone.h">
+      <Filter>GameWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TestClient\GameWorld\gameobject.h">
+      <Filter>GameWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TestClient\ping.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="GameWorld">
+      <UniqueIdentifier>{43bac54b-1eb4-4eb1-a12c-47e59faef75d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

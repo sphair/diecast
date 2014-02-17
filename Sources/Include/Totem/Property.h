@@ -1,0 +1,70 @@
+#pragma once
+#include "precomp.h"
+#pragma warning(push)
+#pragma warning(disable : 4481)
+
+#include "IProperty.h"
+
+ 
+ 
+
+namespace Totem
+{
+
+template<class PropertyType>
+class PropertyData
+{
+public:
+	PropertyType value;
+	std::string name;
+	bool dirty;
+	clan::Signal_v2<const PropertyType &, const PropertyType &> valueChanged;
+};
+
+template<class PropertyType>
+class Property : public IProperty
+{
+public:
+	Property();
+	Property(const Property &copy);
+	Property(const std::string &name);
+
+	void set(const PropertyType& value, bool invokeValueChanged = true);
+	const PropertyType &get() const;
+	PropertyType &get();
+	const std::string &getName() const override;
+	bool isNull() const override;
+	bool isDirty() const override;
+	void clearDirty() override;
+	unsigned int getRuntimeTypeId() const override;
+
+	clan::Signal_v2<const PropertyType &/*old_value*/, const PropertyType &/*new_value*/> &valueChanged();
+
+	Property<PropertyType> operator= (const Property<PropertyType>& rhs);
+	Property<PropertyType> operator= (const PropertyType& rhs);
+	Property<PropertyType> operator+= (const Property<PropertyType>& rhs);
+	Property<PropertyType> operator+= (const PropertyType& rhs);
+	Property<PropertyType> operator-= (const Property<PropertyType>& rhs);
+	Property<PropertyType> operator-= (const PropertyType& rhs);
+	Property<PropertyType> operator*= (const Property<PropertyType>& rhs);
+	Property<PropertyType> operator*= (const PropertyType& rhs);
+	bool operator== (const Property<PropertyType>& rhs);
+	bool operator== (const PropertyType& rhs);
+	bool operator!= (const Property<PropertyType>& rhs);
+	bool operator!= (const PropertyType& rhs);
+	bool operator> (const Property<PropertyType>& rhs);
+	bool operator> (const PropertyType& rhs);
+	bool operator< (const Property<PropertyType>& rhs);
+	bool operator< (const PropertyType& rhs);
+	operator const PropertyType &() const;
+	operator PropertyType &();
+
+private:
+	std::shared_ptr<PropertyData<PropertyType>> data;
+};
+
+#include "Property.inl"
+
+} //namespace Totem
+
+#pragma warning(pop)

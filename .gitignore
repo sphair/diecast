@@ -1,0 +1,35 @@
+Server/Database/game.db
+Server/Builds/vc12
+Server/KingdomRangersServer
+Server/Lib
+Design/Game/~$sign Bible.docx
+Server/TestClient.exe
+Server/TestClient
+Server/Database/Tools/DataImporter
+
+#Visual Studio
+ipch
+[Bb]in
+[Dd]ebug*/
+[Rr]elease*/
+*.suo
+*.sdf
+*.opensdf
+*.user
+*.pdb
+
+#MonoDevelop
+*.pidb
+*.userprefs
+
+#Mac
+*.DS_Store
+
+#XCode
+xcuserdata
+
+#AppCode
+/*/.idea/workspace.xml
+/*/*/.idea/workspace.xml
+/*/*/*/.idea/workspace.xml
+/*/*/*/*/.idea/workspace.xml

@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="GameWorld">
+      <UniqueIdentifier>{24f16bd1-5891-48ec-978d-606b2d716d0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{8b0c345e-dea0-4d1d-b210-3334a8b5df2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{6087b373-f815-4829-864d-d5ebe1970e65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameWorld\Zone">
+      <UniqueIdentifier>{22b9354c-f55b-4a4c-8e52-8175c44c2fb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameWorld\Components">
+      <UniqueIdentifier>{850f0b1e-0b36-42bb-bb24-dd8e173b9351}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Totem">
+      <UniqueIdentifier>{d536a89b-d30c-44a4-8ea6-ebfc971d3c0e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Sources\ServerEngine\precomp.cpp" />
+    <ClCompile Include="..\Sources\ServerEngine\server.cpp" />
+    <ClCompile Include="..\Sources\ServerEngine\server_user.cpp" />
+    <ClCompile Include="..\Sources\ServerEngine\GameWorld\player.cpp">
+      <Filter>GameWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\ServerEngine\GameWorld\player_manager.cpp">
+      <Filter>GameWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\ServerEngine\GameWorld\server_gameobject.cpp">
+      <Filter>GameWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\ServerEngine\GameWorld\Zone\zone.cpp">
+      <Filter>GameWorld\Zone</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\ServerEngine\GameWorld\Zone\zone_manager.cpp">
+      <Filter>GameWorld\Zone</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\ServerEngine\Utilities\scope_timer.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\ServerEngine\Utilities\tick_timer.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\ServerEngine\GameWorld\Components\property_serializer.cpp">
+      <Filter>GameWorld\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\ServerEngine\GameWorld\Components\replicated_container.cpp">
+      <Filter>GameWorld\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\ServerEngine\GameWorld\Zone\zone_visibility_all.cpp">
+      <Filter>GameWorld\Zone</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\ServerEngine\GameWorld\Components\template_manager.cpp">
+      <Filter>GameWorld\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\ServerEngine\GameWorld\Components\replicated_properties.cpp">
+      <Filter>GameWorld\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\ServerEngine\GameWorld\Components\component_serializer.cpp">
+      <Filter>GameWorld\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\ServerEngine\GameWorld\gameobject_manager.cpp">
+      <Filter>GameWorld</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Sources\ServerEngine\precomp.h" />
+    <ClInclude Include="..\Sources\ServerEngine\server.h" />
+    <ClInclude Include="..\Sources\ServerEngine\server_user.h" />
+    <ClInclude Include="..\Sources\ServerEngine\GameWorld\player.h">
+      <Filter>GameWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\ServerEngine\GameWorld\player_manager.h">
+      <Filter>GameWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\ServerEngine\GameWorld\server_gameobject.h">
+      <Filter>GameWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\ServerEngine\GameWorld\Zone\zone.h">
+      <Filter>GameWorld\Zone</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\ServerEngine\GameWorld\Zone\zone_manager.h">
+      <Filter>GameWorld\Zone</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\ServerEngine\Network\network_receiver.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\ServerEngine\Utilities\scope_timer.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\ServerEngine\Utilities\tick_timer.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\ServerEngine\GameWorld\Components\component_serializer.h">
+      <Filter>GameWorld\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\ServerEngine\GameWorld\Components\property_serializer.h">
+      <Filter>GameWorld\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\ServerEngine\GameWorld\Components\replicated_container.h">
+      <Filter>GameWorld\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Totem\Component.h">
+      <Filter>Totem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Totem\ComponentContainer.h">
+      <Filter>Totem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Totem\EventSystem.h">
+      <Filter>Totem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Totem\Extensions.h">
+      <Filter>Totem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Totem\HashedString.h">
+      <Filter>Totem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Totem\IComponent.h">
+      <Filter>Totem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Totem\IProperty.h">
+      <Filter>Totem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Totem\IPropertyList.h">
+      <Filter>Totem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Totem\Property.h">
+      <Filter>Totem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Totem\PropertyContainer.h">
+      <Filter>Totem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Totem\PropertyList.h">
+      <Filter>Totem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Totem\PropertyListContainer.h">
+      <Filter>Totem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Totem\Totem.h">
+      <Filter>Totem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\ServerEngine\GameWorld\Zone\zone_visibility.h">
+      <Filter>GameWorld\Zone</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\ServerEngine\Network\definitions_netevents.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\ServerEngine\GameWorld\Components\template_manager.h">
+      <Filter>GameWorld\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\ServerEngine\GameWorld\Components\replicated_properties.h">
+      <Filter>GameWorld\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\ServerEngine\GameWorld\Components\replicated_component.h">
+      <Filter>GameWorld\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\ServerEngine\GameWorld\gameobject_manager.h">
+      <Filter>GameWorld</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Include\Totem\Property.inl">
+      <Filter>Totem</Filter>
+    </None>
+  </ItemGroup>
+</Project>

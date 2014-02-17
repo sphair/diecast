@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ServerEngine", "ServerEngine.vcxproj", "{B9AB4AA5-8E1F-4F18-9FD1-9FC8BD25B2CF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1F30AB8A-1DE0-4618-A56B-000FA5B740F0} = {1F30AB8A-1DE0-4618-A56B-000FA5B740F0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DatabaseSqlite", "DatabaseSqlite.vcxproj", "{1F30AB8A-1DE0-4618-A56B-000FA5B740F0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DatabasePreprocessor", "DatabasePreprocessor.vcxproj", "{F4ACEAD8-0137-4AD5-93C5-F629F27DF163}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9AB4AA5-8E1F-4F18-9FD1-9FC8BD25B2CF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B9AB4AA5-8E1F-4F18-9FD1-9FC8BD25B2CF}.Debug|Win32.Build.0 = Debug|Win32
+		{B9AB4AA5-8E1F-4F18-9FD1-9FC8BD25B2CF}.Release|Win32.ActiveCfg = Release|Win32
+		{B9AB4AA5-8E1F-4F18-9FD1-9FC8BD25B2CF}.Release|Win32.Build.0 = Release|Win32
+		{1F30AB8A-1DE0-4618-A56B-000FA5B740F0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1F30AB8A-1DE0-4618-A56B-000FA5B740F0}.Debug|Win32.Build.0 = Debug|Win32
+		{1F30AB8A-1DE0-4618-A56B-000FA5B740F0}.Release|Win32.ActiveCfg = Release|Win32
+		{1F30AB8A-1DE0-4618-A56B-000FA5B740F0}.Release|Win32.Build.0 = Release|Win32
+		{F4ACEAD8-0137-4AD5-93C5-F629F27DF163}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F4ACEAD8-0137-4AD5-93C5-F629F27DF163}.Debug|Win32.Build.0 = Debug|Win32
+		{F4ACEAD8-0137-4AD5-93C5-F629F27DF163}.Release|Win32.ActiveCfg = Release|Win32
+		{F4ACEAD8-0137-4AD5-93C5-F629F27DF163}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
